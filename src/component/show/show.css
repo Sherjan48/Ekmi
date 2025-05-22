@@ -1,0 +1,22 @@
+.show{
+    max-width: 1500px;
+    margin: auto;
+    height: 700px;
+}
+.map{
+    width: 1500px;
+    height: 690px;
+}
+.map h1{
+    font-size: 40px;
+    padding-left: 100px;
+}
+.adr{
+    width: 1500px;
+    height: 610px;
+    margin-top: 40px;
+    background-color: red;
+    background-image: url(../../assets/Снимок\ экрана\ 2021-11-19\ в\ 14.17\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
