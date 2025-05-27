@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./header.css";
+
 import logo from "../../assets/Ekmmi.png";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [language, setLanguage] = useState("RU");
@@ -18,6 +20,7 @@ const Header = () => {
             КАТАЛОГ
             {menuOpen && (
               <ul className="dropdown-menu">
+
                 <li>
                   {" "}
                   <Link id="ool" to="divany">
@@ -73,14 +76,17 @@ const Header = () => {
           <Link to="ind" id="ool">
             ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
           </Link>
+
         </ul>
 
         <div className="right-side">
           <img src={logo} alt="Logo" className="logo" />
+
           <Link id="ool" to="contactPage">
             {" "}
             КОНТАКТЫ{" "}
           </Link>
+
           <span className="phone">+38 (099)-638-45-37</span>
           <select
             className="lang-select"
@@ -97,4 +103,6 @@ const Header = () => {
   );
 };
 
+
 export default Header;
+
