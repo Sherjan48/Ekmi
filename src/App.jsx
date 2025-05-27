@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./App.css"; 
 import Header from "./component/header/Header";
@@ -7,11 +8,12 @@ import { BrowserRouter as Router, RouterProvider } from "react-router-dom";
 import { myRouter } from "../route";
 
 
+
 function App() {
   return (
-    <div className="app">
-      <RouterProvider router={myRouter} />
-      
+
+    <div>
+     <RouterProvider router={myRouter}/>
     </div>
   );
 }
