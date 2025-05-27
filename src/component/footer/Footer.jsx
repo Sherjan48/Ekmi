@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
-import ek from "../../assets/ekmi.jpg";
-// import log from "../../assets/logo-w-1 2.png";
+import ek from "../../assets/ekmi.png";
+import log from "../../assets/logo-w-1 2.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
       <img src={ek} className="ek" />
       <div className="container">
         <div className="box">
-          {/* <img src={log} /> */}
+          <img src={log} />
           <div className="katalog">
             <a href="">Каталог</a>
             <a href="">О Компании</a>
