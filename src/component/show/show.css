@@ -18,7 +18,6 @@
   width: 1500px;
   height: 610px;
   margin-top: 40px;
-  background-color: red;
   background-image: url(../../assets/2025-05-23_15-45-54.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,31 +46,33 @@
 .fact3 p {
   font-size: 20px;
 }
-.fact > div > span{
-    position: absolute;
-    font-family: Poppins;
-font-weight: 700;
-font-size: 176px;
-vertical-align: middle;
-color: rgba(91, 91, 91, 0.19);
-top: 809px;
-/* left:  66.98px */
-}
 .fact2 > span {
-    position: absolute;
-    left:  566.98px
+  position: absolute;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 276px;
+  color: rgba(91, 91, 91, 0.19);
+  top: 790px;
+  left: 566.98px;
 }
 .fact3 > span {
-    position: absolute;
-    left:  1056.98px
+  position: absolute;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 276px;
+  color: rgba(91, 91, 91, 0.19);
+  top: 790px;
+  left: 1056.98px;
 }
 .fact1 > span {
-    position: absolute;
-    left:  62.98px
+  position: absolute;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 276px;
+  color: rgba(91, 91, 91, 0.19);
+  top: 790px;
+  left: 62.98px;
 }
-
-
-
 .fil {
   width: 1170px;
   height: 3000px;
@@ -154,6 +155,7 @@ top: 809px;
 }
 .inf2 span {
   font-weight: 100;
+  
 }
 .inf3 {
   width: 280px;
@@ -195,7 +197,6 @@ top: 809px;
 .page2 {
   width: 570px;
   height: 430px;
-  margin-left: 30px;
   background-image: url(../../assets/sofa.png);
   background-size: cover;
 }
@@ -342,4 +343,390 @@ top: 809px;
   height: 300px;
   background-image: url(../../assets/sofa.png);
   background-size: cover;
+}
+@media (max-width: 425px) {
+  .show {
+    width: 1500px;
+    height: 34300px;
+  }
+  .map {
+    width: 100%;
+    height: 1130px;
+  }
+  .map h1 {
+    font-size: 80px;
+    margin-left: 100px;
+  }
+  .map h1:first-letter {
+    color: orange;
+  }
+  .adr {
+    width: 100%;
+    height: 1010px;
+    margin-top: 40px;
+    background-image: url(../../assets/2025-05-23_15-45-54.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .facts {
+    width: 1290px;
+    height: 2200px;
+    margin: auto;
+  }
+  .facts h1 {
+    margin-top: 80px;
+    font-size: 80px;
+  }
+  .facts h1:first-letter {
+    color: orange;
+  }
+  .fact {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fact1,
+  .fact2,
+  .fact3 {
+    width: 1290px;
+    height: 625px;
+    margin-top: 50px;
+  }
+  .fact1,
+  .fact2,
+  .fact3 p {
+    font-size: 70px;
+  }
+  .fact1 > span {
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 776px;
+    color: rgba(91, 91, 91, 0.19);
+    top: 1200px;
+    left: 6.98px;
+  }
+  .fact2 > span {
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 776px;
+    color: rgba(91, 91, 91, 0.19);
+    top: 1890px;
+    left: 6.98px;
+  }
+  .fact3 > span {
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 776px;
+    color: rgba(91, 91, 91, 0.19);
+    top: 2550px;
+    left: 6.98px;
+  }
+  .fil {
+    width: 1370px;
+    height: 3000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .infa {
+    width: 740px;
+    height: 900px;
+    margin: auto;
+  }
+  .infa h1 {
+    font-size: 70px;
+    color: orange;
+    margin-top: 50px;
+  }
+  .info {
+    width: 740px;
+    height: 780px;
+  }
+  .info h3 {
+    color: white;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+  .info ul {
+    padding-left: 35px;
+    color: orange;
+    font-size: 50px;
+  }
+  .info span {
+    color: white;
+  }
+  .info ol {
+    list-style: none;
+    color: white;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+  .page1 {
+    width: 1370px;
+    height: 1090px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page2 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page3 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page4 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page5 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .inf1 {
+    width: 800px;
+    height: 885px;
+    margin: auto;
+    margin-top: 120px;
+  }
+  .inf1 h1 {
+    color: orange;
+    padding-bottom: 40px;
+    font-size: 80px;
+  }
+  .inf1 h3 {
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .inf1 span {
+    font-weight: 100;
+  }
+  .span {
+    display: none;
+  }
+  .page6 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page7 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page8 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .inf2 {
+    width: 770px;
+    height: 856px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .inf2 h1 {
+    color: orange;
+    padding-bottom: 40px;
+    font-size: 80px;
+  }
+  .inf2 h3 {
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .inf2 span {
+    font-weight: 100;
+  }
+  .page9 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page10 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page11 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page12 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page13 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page14 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page15 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page16 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page17 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .inf3 {
+    width: 990px;
+    height: 954px;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .mog {
+    font-size: 80px;
+  }
+  .inf3 h1 {
+    color: orange;
+    font-size: 80px;
+    padding-bottom: 40px;
+  }
+  .inf3 h3 {
+    color: white;
+    font-size: 70px;
+    padding-top: 40px;
+  }
+  .inf3 span {
+    font-weight: 100;
+    
+  }
+  .page18 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page19 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page20 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page21 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page22 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page23 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page24 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page25 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .page26 {
+    width: 1370px;
+    height: 1090px;
+    margin-top: 100px;
+    background-image: url(../../assets/sofa.png);
+    background-size: cover;
+  }
+  .inf4 {
+    width: 780px;
+    height: 810px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .inf4 h1 {
+    color: orange;
+    font-size: 70px;
+    padding-bottom: 40px;
+  }
+  .inf4 h3 {
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .inf4 span {
+    font-weight: 100;
+  }
 }
