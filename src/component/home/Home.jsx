@@ -95,6 +95,7 @@ function Home() {
       </section>
 
       <div className="furniture-slider-container">
+        <p> sdsd </p>
 
         <div className="furniture-slider">
           {data2.map((el, index) => (
