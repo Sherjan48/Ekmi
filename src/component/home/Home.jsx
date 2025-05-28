@@ -5,7 +5,7 @@ import left from "../../assets/left.jpg";
 import right from "../../assets/right.jpg";
 import leon from "../../assets/leon.jpg";
 import bos from "../../assets/bos.jpg";
-import arni from "../../assets/arni.jpg";
+import arni from "../../assets/Arni2.jpg";
 import vogue from "../../assets/vogue.jpg";
 import apple from "../../assets/apple.jpg";
 import zara from "../../assets/zara.jpg";
@@ -95,7 +95,6 @@ function Home() {
       </section>
 
       <div className="furniture-slider-container">
-        <img src={left} alt="left" className="furniture-arrow" />
 
         <div className="furniture-slider">
           {data2.map((el, index) => (
@@ -108,7 +107,7 @@ function Home() {
           ))}
         </div>
 
-        <img src={right} alt="right" className="furniture-arrow" />
+
       </div>
 
       <div className="taks">
@@ -130,8 +129,10 @@ function Home() {
           </p>
         </div>
       </div>
+          
 
-      <h2 class="partners-title">
+
+      {/* <h2 class="partners-title">
         <span>Н</span>аши партнёры
       </h2>
 
@@ -157,7 +158,7 @@ function Home() {
             <img src={arni} alt="Мебель Эком" class="partners-image" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="immggss">
         <img src={vogue} className="vogue" />
