@@ -63,14 +63,14 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="ddmodeli" id="ool">
+                  <Link to="modeli" id="ool">
                     2D-3D модели
                   </Link>
                 </li>
               </ul>
             )}
           </li>
-          <Link to="/" id="ool" className="about-link">
+          <Link to="home" id="ool" className="about-link">
             О КОМПАНИИ
           </Link>
           <Link to="ind" id="ool">

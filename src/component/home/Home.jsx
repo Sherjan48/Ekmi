@@ -6,7 +6,7 @@ import right from "../../assets/right.jpg";
 import leon from "../../assets/leon.jpg";
 import bos from "../../assets/bos.jpg";
 import arni from "../../assets/arni.jpg";
-import vogue from "../../assets/vogue.jpg";
+import vogue from "../../assets/vogue.png";
 import apple from "../../assets/apple.jpg";
 import zara from "../../assets/zara.jpg";
 import samsung from "../../assets/samsung.jpg";
