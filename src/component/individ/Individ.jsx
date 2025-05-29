@@ -10,6 +10,7 @@ import zara from '../../assets/zara.jpg'
 import samsung from '../../assets/samsung.jpg'
 import ff from '../../assets/ff.jpg'
 import tt from '../../assets/tt.jpg'
+import { Link } from "react-router-dom";
 import { data1 } from '../../data'
 
 function Individ() {
@@ -19,7 +20,7 @@ function Individ() {
     <div class="vnb32">
       <h2>П <span>олный цикл производства</span></h2>
       <p>Качество мягкой мебели начинается задолго до начала её производства.</p>
-      <a href="#" class="btnf9">Связаться с менеджером</a>
+      <Link to="show" href="#" class="btnf9">Связаться с менеджером</Link>
     </div>
     <div class="asf67">
       <div class="imgbox92">

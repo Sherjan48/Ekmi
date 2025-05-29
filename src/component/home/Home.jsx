@@ -16,6 +16,7 @@ import gg from "../../assets/gg.jpg";
 import ss from "../../assets/ss.jpg";
 import { data1 } from "../../data";
 import { data2 } from "../../datas";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,7 +26,9 @@ function Home() {
           <h1>
             <span>Л</span>УЧШАЯ ЖИЗНЬ , СОЗДАННАЯ ДЛЯ ВАС!
           </h1>
-          <button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button>
+
+          
+      <Link to="/2d-3d"><button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button></Link> 
         </div>
 
         <div className="right-block">
@@ -68,9 +71,9 @@ function Home() {
             Качество мягкой мебели начинается <br />
             задолго до начала ее производства.
           </p>
-          <a href="#" className="btn_4k2">
-            ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
-          </a>
+          <Link to="ind" href="#" className="btn_4k2">
+            ИНДИ ВИДУАЛЬНАЯ МЕБЕЛЬ
+          </Link>
         </div>
       </div>
 
@@ -95,8 +98,7 @@ function Home() {
       </section>
 
       <div className="furniture-slider-container">
-        <p> sdsd </p>
-        <p> fdfd </p>
+
 
         <div className="furniture-slider">
           {data2.map((el, index) => (

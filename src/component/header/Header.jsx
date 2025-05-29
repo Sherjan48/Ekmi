@@ -52,6 +52,11 @@ const Header = () => {
             <option value="UA">UA</option>
             <option value="EN">EN</option>
           </select>
+
+            <div className="language">
+              
+            </div>
+
         </div>
       </nav>
     </header>
