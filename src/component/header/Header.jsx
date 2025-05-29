@@ -20,53 +20,15 @@ const Header = () => {
             КАТАЛОГ
             {menuOpen && (
               <ul className="dropdown-menu">
+                <li> <Link id="ool" to="divany">Диваны</Link> </li>
+                <li> <Link id="ool" to="kresla">Кресла</Link></li>
+                <li> <Link to="stulya" id="ool" >Стулья</Link> </li>
+                <li> <Link to="krovati" id="ool" >Кровати</Link> </li>
+                <li> <Link to="matrasy" id="ool" >Матрасы</Link> </li>
+                <li> <Link to="pufty" id="ool" >Пуфы</Link> </li>
+                <li><Link to="eks" id="ool" >Эксклюзивная мебель</Link></li>
+                <li><Link to="modeli" id="ool" >2D-3D модели</Link></li>
 
-                <li>
-                  {" "}
-                  <Link id="ool" to="divany">
-                    Диваны
-                  </Link>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <Link id="ool" to="kresla">
-                    Кресла
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="stulya" id="ool">
-                    Стулья
-                  </Link>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <Link to="krovati" id="ool">
-                    Кровати
-                  </Link>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <Link to="matrasy" id="ool">
-                    Матрасы
-                  </Link>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <Link to="pufty" id="ool">
-                    Пуфы
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link to="eks" id="ool">
-                    Эксклюзивная мебель
-                  </Link>
-                </li>
-                <li>
-                  <Link to="modeli" id="ool">
-                    2D-3D модели
-                  </Link>
-                </li>
               </ul>
             )}
           </li>

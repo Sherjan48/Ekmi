@@ -67,7 +67,7 @@ function Dmodel() {
 
 
       
-        <div className="pagination">
+        {/* <div className="pagination">
           <span className="page active">1</span>
           <span className="page">2</span>
           <span className="page">3</span>
@@ -78,7 +78,7 @@ function Dmodel() {
 
         <div className="button-wr">
           <button className="see-all-btn">СМОТРЕТЬ ВСЕ</button>
-        </div>
+        </div> */}
 
 
                 <div className="form-section">

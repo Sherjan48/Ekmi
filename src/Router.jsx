@@ -29,6 +29,10 @@ export const myRouter = createBrowserRouter([
         path: "show",
         element: <Show />,
       },
+      {
+        path: 'Dmodel',
+        element:<Dmodel/>
+      }
     ],
   },
 ]);
