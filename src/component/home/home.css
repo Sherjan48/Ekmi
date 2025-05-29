@@ -1,11 +1,11 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background: #ffffff;
+  background: white;
 }
 
 .cont {
-  height: 6150px;
+  height: auto;
 }
 
 .wrapper {

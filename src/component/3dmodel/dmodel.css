@@ -1,9 +1,14 @@
+.wwweee{
+ max-width: 1500px;
+  margin: auto;
+}
 .poisk {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   flex-wrap: wrap;
+ 
 }
 
 .vse-modeli {
