@@ -27,12 +27,16 @@ const Header = () => {
                 <li> <Link to="pufty" id="ool" >Пуфы</Link> </li>
                 <li><Link to="eks" id="ool" >Эксклюзивная мебель</Link></li>
                 <li><Link to="modeli" id="ool" >2D-3D модели</Link></li>
+
               </ul>
             )}
           </li>
           <Link to="/" id="ool" className="about-link">О КОМПАНИИ</Link>
           <Link to="ind" id="ool">ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ</Link>
                   
+
+
+              
         </ul>
 
         <div className="right-side">
