@@ -13,7 +13,7 @@ function Dmodel() {
         mebel.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
   return (
-    <div>
+    <div className='wwweee'>
             <div className='poisk'>
               <div
                 className="vse-modeli"
