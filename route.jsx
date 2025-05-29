@@ -11,8 +11,12 @@ export const myRouter =createBrowserRouter([
                 path:'modeli',
                 element:<Model/>
             },
+            // {
+            //     path: '/2d-3d',
+            //     element:<Dmodel/>
+            // },
             {
-                path: '/2d-3d',
+                path: 'Dmodel',
                 element:<Dmodel/>
             }
         ]

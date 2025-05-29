@@ -83,7 +83,7 @@ function Model() {
 
 
         <div className="button-wrapper">
-          <button className="see-all-btn">СМОТРЕТЬ ВСЕ</button>
+          <Link to='/Dmodel' className="see-all-btn">СМОТРЕТЬ ВСЕ</Link>
         </div>
       </div>
 
