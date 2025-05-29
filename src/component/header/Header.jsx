@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
-import logo from '../../assets/Ekmi.jpg'
+
+import logo from "../../assets/Ekmmi.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -27,17 +28,27 @@ const Header = () => {
                 <li> <Link to="pufty" id="ool" >Пуфы</Link> </li>
                 <li><Link to="eks" id="ool" >Эксклюзивная мебель</Link></li>
                 <li><Link to="modeli" id="ool" >2D-3D модели</Link></li>
+
               </ul>
             )}
           </li>
-          <Link to="/" id="ool" className="about-link">О КОМПАНИИ</Link>
-          <Link to="ind" id="ool">ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ</Link>
-                  
+          <Link to="home" id="ool" className="about-link">
+            О КОМПАНИИ
+          </Link>
+          <Link to="ind" id="ool">
+            ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
+          </Link>
+
         </ul>
 
         <div className="right-side">
           <img src={logo} alt="Logo" className="logo" />
-          <Link id="ool" to="contactPage"> КОНТАКТЫ </Link> 
+
+          <Link id="ool" to="contactPage">
+            {" "}
+            КОНТАКТЫ{" "}
+          </Link>
+
           <span className="phone">+38 (099)-638-45-37</span>
           <select
             className="lang-select"
@@ -54,4 +65,6 @@ const Header = () => {
   );
 };
 
+
 export default Header;
+
