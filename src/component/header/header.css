@@ -1,28 +1,31 @@
+
+
 .header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-gap: 40px;
-
-  align-items: center;
-}
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+  } 
+  
+   .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
 
 #ool {
   text-decoration: none;

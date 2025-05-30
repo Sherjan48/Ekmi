@@ -1,9 +1,14 @@
+.wwweee{
+ max-width: 1500px;
+  margin: auto;
+}
 .poisk {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   flex-wrap: wrap;
+ 
 }
 
 .vse-modeli {
@@ -102,4 +107,12 @@
 .button-wr {
   margin-top: 40px;
   margin-left: 650px;
+}
+
+.success-message {
+  font-size: 24px;      
+  color: green;        
+  font-weight: bold;   
+  margin-top: 20px;     
+  text-align: center;   
 }

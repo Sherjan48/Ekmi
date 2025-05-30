@@ -4,6 +4,7 @@ import Home from "./component/home/Home";
 import Layout from "./component/Layout/Layout";
 import Model from "./component/2dmodel/Model";
 import Dmodel from "./component/3dmodel/Dmodel";
+import Individ from "./component/individ/Individ";
 export const myRouter = createBrowserRouter([
   {
     path: "/",
@@ -14,8 +15,8 @@ export const myRouter = createBrowserRouter([
         element: <Show />,
       },
       {
-        path: "home",
-        element: <Home />,
+        path: 'ind' ,
+        element: <Individ />
       },
       {
         path: "modeli",
@@ -28,6 +29,10 @@ export const myRouter = createBrowserRouter([
       {
         path: "show",
         element: <Show />,
+      },
+      {
+        path: 'Dmodel',
+        element:<Dmodel/>
       },
     ],
   },

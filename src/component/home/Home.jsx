@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./home.css";
 import divane from "../../assets/image.jpg";
 import left from "../../assets/left.jpg";
 import right from "../../assets/right.jpg";
 import leon from "../../assets/leon.jpg";
 import bos from "../../assets/bos.jpg";
-import arni from "../../assets/arni.jpg";
-import vogue from "../../assets/vogue.png";
+import arni from "../../assets/Arni2.jpg";
+import vogue from "../../assets/vogue.jpg";
 import apple from "../../assets/apple.jpg";
 import zara from "../../assets/zara.jpg";
 import samsung from "../../assets/samsung.jpg";
@@ -16,8 +16,20 @@ import gg from "../../assets/gg.jpg";
 import ss from "../../assets/ss.jpg";
 import { data1 } from "../../data";
 import { data2 } from "../../datas";
+import { Link } from "react-router-dom";
 
 function Home() {
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+    const container = scrollRef.current;
+    const cardWidth = container.querySelector('.item').offsetWidth + 20; 
+    container.scrollBy({
+      left: direction === "left" ? -cardWidth : cardWidth,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="cont">
       <div className="wrapper">
@@ -25,7 +37,9 @@ function Home() {
           <h1>
             <span>Л</span>УЧШАЯ ЖИЗНЬ , СОЗДАННАЯ ДЛЯ ВАС!
           </h1>
-          <button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button>
+
+          
+      <Link to="/2d-3d"><button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button></Link> 
         </div>
 
         <div className="right-block">
@@ -34,22 +48,26 @@ function Home() {
         </div>
       </div>
 
-      <div className="stran">
-        <img src={left} alt="left" className="arrow" />
+      <div className="stran-slider">
+        <button onClick={() => scroll("left")} className="scroll-btn left">
+          <img src={left}  />
+        </button>
 
-        <div className="imgh">
+        <div className="imgh" ref={scrollRef}>
           {data1.map((el, index) => (
             <div className="item" key={index}>
               <div className="image-box">
                 <img src={el.image} alt={el.name} />
               </div>
               <h2>{el.name}</h2>
-              <p>{el.price} </p>
+              <p>{el.price}</p>
             </div>
           ))}
         </div>
 
-        <img src={right} alt="right" className="arrow" />
+        <button onClick={() => scroll("right")} className="scroll-btn right">
+          <img src={right} className="rightrrr" />
+        </button>
       </div>
 
       <div className="block_92x">
@@ -68,9 +86,9 @@ function Home() {
             Качество мягкой мебели начинается <br />
             задолго до начала ее производства.
           </p>
-          <a href="#" className="btn_4k2">
-            ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
-          </a>
+          <Link to="ind" href="#" className="btn_4k2">
+            ИНДИ ВИДУАЛЬНАЯ МЕБЕЛЬ
+          </Link>
         </div>
       </div>
 
@@ -95,7 +113,7 @@ function Home() {
       </section>
 
       <div className="furniture-slider-container">
-        <img src={left} alt="left" className="furniture-arrow" />
+
 
         <div className="furniture-slider">
           {data2.map((el, index) => (
@@ -108,7 +126,7 @@ function Home() {
           ))}
         </div>
 
-        <img src={right} alt="right" className="furniture-arrow" />
+
       </div>
 
       <div className="taks">
@@ -130,8 +148,10 @@ function Home() {
           </p>
         </div>
       </div>
+          
 
-      <h2 class="partners-title">
+
+      {/* <h2 class="partners-title">
         <span>Н</span>аши партнёры
       </h2>
 
@@ -157,7 +177,7 @@ function Home() {
             <img src={arni} alt="Мебель Эком" class="partners-image" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="immggss">
         <img src={vogue} className="vogue" />
