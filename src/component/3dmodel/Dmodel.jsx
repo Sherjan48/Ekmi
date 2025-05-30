@@ -12,6 +12,13 @@ function Dmodel() {
       const filteredMebeli = mebel2.filter(mebel =>
         mebel.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
+
+      const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+  };
   return (
     <div className='wwweee'>
             <div className='poisk'>
@@ -93,12 +100,13 @@ function Dmodel() {
               <h2 className="form-title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
             </div>
           </div>
-          <form className="form-fields">
-            <input type="text" placeholder="Ваше имя" />
-            <input type="text" placeholder="Ваш номер телефона" />
-            <input type="text" placeholder="Страна" />
+          <form className="form-fields" onSubmit={handleSubmit}>
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="text" placeholder="Ваш номер телефона" required />
+            <input type="text" placeholder="Страна" required/>
             <textarea placeholder="Комментарий" />
             <button type="submit" className="form-button">ЗАПРОСИТЬ ЗВОНОК</button>
+            {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
           </form>
         </div>
       </div>

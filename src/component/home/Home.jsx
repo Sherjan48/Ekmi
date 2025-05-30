@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./home.css";
 import divane from "../../assets/image.jpg";
 import left from "../../assets/left.jpg";
@@ -19,6 +19,17 @@ import { data2 } from "../../datas";
 import { Link } from "react-router-dom";
 
 function Home() {
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+    const container = scrollRef.current;
+    const cardWidth = container.querySelector('.item').offsetWidth + 20; 
+    container.scrollBy({
+      left: direction === "left" ? -cardWidth : cardWidth,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="cont">
       <div className="wrapper">
@@ -37,22 +48,26 @@ function Home() {
         </div>
       </div>
 
-      <div className="stran">
-        <img src={left} alt="left" className="arrow" />
+      <div className="stran-slider">
+        <button onClick={() => scroll("left")} className="scroll-btn left">
+          <img src={left}  />
+        </button>
 
-        <div className="imgh">
+        <div className="imgh" ref={scrollRef}>
           {data1.map((el, index) => (
             <div className="item" key={index}>
               <div className="image-box">
                 <img src={el.image} alt={el.name} />
               </div>
               <h2>{el.name}</h2>
-              <p>{el.price} </p>
+              <p>{el.price}</p>
             </div>
           ))}
         </div>
 
-        <img src={right} alt="right" className="arrow" />
+        <button onClick={() => scroll("right")} className="scroll-btn right">
+          <img src={right} className="rightrrr" />
+        </button>
       </div>
 
       <div className="block_92x">

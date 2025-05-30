@@ -586,3 +586,64 @@ header .orange {
   display: block;
   margin-left: 300px;
 }
+
+
+
+.stran-slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgh {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* width: 660px; */
+}
+
+.item {
+  min-width: 300px; 
+  height: 300px;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.scroll-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.scroll-btn.left {
+  margin-right: 10px;
+}
+
+.scroll-btn.right {
+  margin-left: 10px;
+}
+
+.rightrrr {
+  transform: rotate(180deg);
+}
