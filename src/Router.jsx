@@ -5,6 +5,7 @@ import Layout from "./component/Layout/Layout";
 import Model from "./component/2dmodel/Model";
 import Dmodel from "./component/3dmodel/Dmodel";
 import Individ from "./component/individ/Individ";
+import Voprosy from "./component/voprosy/Voprosy";
 export const myRouter = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,11 @@ export const myRouter = createBrowserRouter([
         path: 'Dmodel',
         element:<Dmodel/>
       },
+      {
+        path: 'voprosy',
+        element:<Voprosy/>
+      },
+
     ],
   },
 ]);

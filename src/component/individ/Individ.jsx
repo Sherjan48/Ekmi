@@ -32,7 +32,7 @@ function Individ() {
     <div class="vnb32">
       <h2>П <span>олный цикл производства</span></h2>
       <p>Качество мягкой мебели начинается задолго до начала её производства.</p>
-      <Link to="show" href="#" class="btnf9">Связаться с менеджером</Link>
+      <Link to="/voprosy" href="#" class="btnf9">Связаться с менеджером</Link>
     </div>
     <div class="asf67">
       <div class="imgbox92">

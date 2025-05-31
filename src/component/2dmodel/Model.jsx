@@ -94,7 +94,7 @@ function Model() {
       </div>
 
 
-          <div className="form-section">
+          {/* <div className="form-section">
   <div className="form-image-block">
     <img src={ffon} className="form-image" />
   </div>
@@ -115,7 +115,7 @@ function Model() {
       {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
     </form>
   </div>
-</div>
+</div> */}
 
 
     </div>

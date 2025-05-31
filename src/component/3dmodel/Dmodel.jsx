@@ -3,7 +3,6 @@ import { FaSearch } from 'react-icons/fa';
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { mebel2 } from '../Mebel2';
 import './dmodel.css'
-import ffon from '../../assets/ffon.jpg'
 
 function Dmodel() {
       const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +12,7 @@ function Dmodel() {
         mebel.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
 
-      const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-  };
+      
   return (
     <div className='wwweee'>
             <div className='poisk'>
@@ -88,7 +82,7 @@ function Dmodel() {
         </div> */}
 
 
-                <div className="form-section">
+                {/* <div className="form-section">
         <div className="form-image-block">
           <img src={ffon} className="form-image" />
         </div>
@@ -109,7 +103,7 @@ function Dmodel() {
             {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

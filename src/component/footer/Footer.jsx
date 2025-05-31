@@ -24,7 +24,8 @@ function Footer() {
             <a href="https://www.instagram.com/ekmi.com.ua/"><FaInstagram/></a>
             <a href="https://www.facebook.com/ekmimebel.mos/" className="icon" ><FaFacebook/></a>
             <p>+38 (099)-638-45-37</p>
-            <button className="btn">ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ</button>
+            <Link to='/voprosy'>
+            <button className="btn">ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ</button></Link>
           </div>
         </div>
         <div className="text">
