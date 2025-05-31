@@ -29,7 +29,7 @@ function Home() {
       behavior: "smooth",
     });
   };
-
+  
   return (
     <div className="cont">
       <div className="wrapper">
