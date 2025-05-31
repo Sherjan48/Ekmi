@@ -7,6 +7,7 @@
   position: relative;
   max-width: 1500px;
   margin-bottom: 90px;
+  margin: auto;
 }
 
 .form-content {
@@ -88,4 +89,82 @@
   font-weight: bold;   
   margin-top: 20px;     
   text-align: center;   
+}
+
+
+
+.return-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: green;
+}
+
+.modal-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-content .return-button {
+  background-color: #ff9100;
+  color: white;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .return-button:hover {
+  background-color: #e57c00;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
