@@ -6,7 +6,7 @@ import Model from "./component/2dmodel/Model";
 import Dmodel from "./component/3dmodel/Dmodel";
 import Individ from "./component/individ/Individ";
 import Voprosy from "./component/voprosy/Voprosy";
-import Stulya from "./component/stulya/Stulya";
+import Divany from "./component/divany/Divany";
 export const myRouter = createBrowserRouter([
   {
     path: "/",
@@ -18,19 +18,19 @@ export const myRouter = createBrowserRouter([
       },
       {
         path: 'ind' ,
-        element: <Individ />
+        element: <Individ/>
       },
       {
         path: "modeli",
-        element: <Model />,
+        element: <Model/>,
       },
       {
         path: "/2d-3d",
-        element: <Dmodel />,
+        element: <Dmodel/>,
       },
       {
         path: "show",
-        element: <Show />,
+        element: <Show/>,
       },
       {
         path: 'Dmodel',
@@ -41,8 +41,12 @@ export const myRouter = createBrowserRouter([
         element:<Voprosy/>
       },
       {
-        path: 'stulya',
-        element: <Stulya/>
+        path: 'divani',
+        element:<Divany/>
+      },
+      {
+        path: "modeli",
+        element: <Model/>,
       },
     ],
   },

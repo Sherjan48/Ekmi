@@ -25,11 +25,11 @@ function Model() {
   return (
     <div className="category-menu">
       {data.map((item, index) => (
-        <div key={index} className="category-item">
-          <img src={item.img} alt='' className="category-image" />
-          <p className='category-title'>{item.name}</p> 
-        </div>
-      ))}
+        <Link to={item.Route} key={index} className="category-item">
+          <img src={item.img} alt={item.name} className="category-image" />
+            <p className='category-title'>{item.name}</p>
+        </Link>
+        ))}
 
 
       <div className='poisk'>
@@ -41,14 +41,14 @@ function Model() {
           <p>Все 2D-3D модели <SlArrowDown /></p>
           {menuOpen && (
             <ul className="vse-modeli-menu">
-              <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li>
-              <li>Диваны</li>
+              {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
+              <li><Link to='/divany' className='div1'> Диваны</Link></li>
               <li>Кресла</li>
               <li>Стулья</li>
-              <li>Кровати</li>
+              {/* <li>Кровати</li>
               <li>Матрацы</li>
               <li>Пуфы</li>
-              <li>Эксклюзивная мебель</li>
+              <li>Эксклюзивная мебель</li> */}
             </ul>
           )}
         </div>

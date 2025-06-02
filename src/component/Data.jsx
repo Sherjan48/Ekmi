@@ -5,10 +5,12 @@ import photo4 from '../assets/matras.png'
 import photo5 from '../assets/puf.png'
 import photo6 from '../assets/stul.png'
 import photo7 from '../assets/eksmebel.png'
+import { Route } from 'react-router-dom'
 
 export const data  = [
     { name: "ДИВАНЫ", 
-      img: photo1
+      img: photo1,
+      Route: '/divani'
      },
     { name: "СТУЛЬЯ", 
       img: photo2
@@ -16,15 +18,15 @@ export const data  = [
     { name: "КРЕСЛА", 
         img: photo3
     },
-    { name: "КРОВАТИ", 
-        img: photo4
-     },
-    { name: "МАТРАЦЫ", 
-        img: photo5
-    },
-    { name: "ПУФЫ", 
-      img: photo6
-    },
+    // { name: "КРОВАТИ", 
+    //     img: photo4
+    //  },
+    // { name: "МАТРАЦЫ", 
+    //     img: photo5
+    // },
+    // { name: "ПУФЫ", 
+    //   img: photo6
+    // },
     { name: "ЭКСКЛЮЗИВНАЯ МЕБЕЛЬ", 
       img: photo7
      },

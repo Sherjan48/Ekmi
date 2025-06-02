@@ -32,7 +32,7 @@ function Home() {
     });
   };
 
-
+  
     const images = [divane, divane1, divane2];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -106,7 +106,7 @@ function Home() {
             задолго до начала ее производства.
           </p>
           <Link to="ind" href="#" className="btn_4k2">
-            ИНДИ ВИДУАЛЬНАЯ МЕБЕЛЬ
+            ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
           </Link>
         </div>
       </div>
