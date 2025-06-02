@@ -41,8 +41,12 @@ export const myRouter = createBrowserRouter([
         element:<Voprosy/>
       },
       {
-        path: 'divany',
+        path: 'divani',
         element:<Divany/>
+      },
+      {
+        path: "modeli",
+        element: <Model />,
       },
 
     ],

@@ -13,6 +13,7 @@
     text-align: center;
     width: 130px;
     /* padding-right:10px; */
+    text-decoration: none;
   }
   
   .category-image {
@@ -24,8 +25,10 @@
   
   .category-title {
     font-size: 14px;
-    color: #333;
+    color: black;
     padding-left: 120px;
+    text-decoration: none;
+    
   }
   
   .category-title.highlight {

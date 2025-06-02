@@ -25,11 +25,11 @@ function Model() {
   return (
     <div className="category-menu">
       {data.map((item, index) => (
-        <div key={index} className="category-item">
-          <img src={item.img} alt='' className="category-image" />
-          <p className='category-title'>{item.name}</p> 
-        </div>
-      ))}
+        <Link to={item.Route} key={index} className="category-item">
+          <img src={item.img} alt={item.name} className="category-image" />
+            <p className='category-title'>{item.name}</p>
+        </Link>
+        ))}
 
 
       <div className='poisk'>

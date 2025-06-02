@@ -17,10 +17,10 @@ function Divany() {
     <div className="category-menu">
         
               {data.map((item, index) => (
-                <div key={index} className="category-item">
-                  <img src={item.img} alt='' className="category-image" />
-                  <p className='category-title'>{item.name}</p> 
-                </div>
+              <Link to={item.Route} key={index} className="category-item">
+              <img src={item.img} alt={item.name} className="category-image" />
+              <p className='category-title'>{item.name}</p>
+              </Link>
               ))}
         
         
@@ -30,11 +30,11 @@ function Divany() {
                   onMouseEnter={() => setMenuOpen(true)}
                   onMouseLeave={() => setMenuOpen(false)}
                 >
-                  <p>Все 2D-3D модели <SlArrowDown /></p>
+                  <p>Диваны <SlArrowDown /></p>
                   {menuOpen && (
                     <ul className="vse-modeli-menu">
                         {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
-                        <li><Link to='/divany' className='div1'> Диваны</Link></li>
+                        <li><Link to='/modeli' className='div1'> Все 2D-3D модели </Link></li>
                         <li>Кресла</li>
                         <li>Стулья</li>
                     </ul>
