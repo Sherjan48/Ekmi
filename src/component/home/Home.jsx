@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import divane from "../../assets/image.jpg";
 import left from "../../assets/left.jpg";
@@ -17,6 +17,8 @@ import ss from "../../assets/ss.jpg";
 import { data1 } from "../../data";
 import { data2 } from "../../datas";
 import { Link } from "react-router-dom";
+import divane1 from '../../assets/leon.jpg'
+import divane2 from '../../assets/ampir.jpg'
 
 function Home() {
     const scrollRef = useRef(null);
@@ -29,22 +31,39 @@ function Home() {
       behavior: "smooth",
     });
   };
-  
+
+
+    const images = [divane, divane1, divane2];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="cont">
       <div className="wrapper">
         <div className="left-block">
-          <h1>
-            <span>Л</span>УЧШАЯ ЖИЗНЬ , СОЗДАННАЯ ДЛЯ ВАС!
-          </h1>
-
-          
-      <Link to="/2d-3d"><button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button></Link> 
+          <h1><span>Л</span>УЧШАЯ ЖИЗНЬ , СОЗДАННАЯ ДЛЯ ВАС!</h1>
+          <Link to="/2d-3d">
+            <button className="catalog-button">ПЕРЕЙТИ В КАТАЛОГ</button>
+          </Link> 
         </div>
 
         <div className="right-block">
           <h3 className="top-text">Основано в 1993 году</h3>
-          <img src={divane} className="bbl" />
+          <img src={images[currentIndex]} className="bbl" alt="divan" />
+          <div className="dots">
+            {images.map((_, idx) => (
+              <span
+                key={idx}
+                className={`dot ${currentIndex === idx ? 'active' : ''}`}
+              ></span>
+            ))}
+          </div>
         </div>
       </div>
 

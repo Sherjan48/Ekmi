@@ -63,7 +63,32 @@ body {
 .bbl {
   margin-top: 25px;
   margin-right: 135px;
+  width: 700px; /* по желанию */
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
 }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ff9100;
+}
+
 
 .novinki {
   margin-left: -10px;

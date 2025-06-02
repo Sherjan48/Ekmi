@@ -9,6 +9,14 @@ function Voprosy() {
     e.preventDefault();
     setIsSubmitted(true);
   };
+
+   const handleReturn = () => {
+    window.location.href = '/'; // Заменить на нужный маршрут
+  };
+
+  const closeModal = () => {
+    setIsSubmitted(false);
+  };
   return (
     <div className='voprosy'>
         <div className="form-section">
@@ -29,7 +37,17 @@ function Voprosy() {
                   <input type="text" placeholder="Страна" required/>
                   <input placeholder="Комментарий" />
                   <button type="submit" className="form-button">ЗАПРОСИТЬ ЗВОНОК</button>
-                  {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
+                  {isSubmitted && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h2>Заявка отправлена!</h2>
+            <p>Спасибо за обращение. Мы свяжемся с вами в ближайшее время.</p>
+            <button onClick={handleReturn} className="return-button">
+              Вернуться на главное меню
+            </button>
+          </div>
+        </div>
+      )}
                 </form>
               </div>
             </div>
