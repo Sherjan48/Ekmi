@@ -41,14 +41,14 @@ function Model() {
           <p>Все 2D-3D модели <SlArrowDown /></p>
           {menuOpen && (
             <ul className="vse-modeli-menu">
-              <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li>
-              <li>Диваны</li>
+              {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
+              <li><Link to='/divany' className='div1'> Диваны</Link></li>
               <li>Кресла</li>
               <li>Стулья</li>
-              <li>Кровати</li>
+              {/* <li>Кровати</li>
               <li>Матрацы</li>
               <li>Пуфы</li>
-              <li>Эксклюзивная мебель</li>
+              <li>Эксклюзивная мебель</li> */}
             </ul>
           )}
         </div>
