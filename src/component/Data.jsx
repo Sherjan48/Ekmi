@@ -13,10 +13,13 @@ export const data  = [
       Route: '/divani'
      },
     { name: "СТУЛЬЯ", 
-      img: photo2
+      img: photo2,
+      Route: '/stulya'
+      
     },
     { name: "КРЕСЛА", 
-        img: photo3
+      img: photo3,
+      Route: '/kresla'
     },
     // { name: "КРОВАТИ", 
     //     img: photo4

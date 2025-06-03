@@ -42,9 +42,9 @@ function Model() {
           {menuOpen && (
             <ul className="vse-modeli-menu">
               {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
-              <li><Link to='/divany' className='div1'> Диваны</Link></li>
-              <li><Link to='kresla'className='div1' >Кресла</Link></li>
-              <li>Стулья</li>
+              <li><Link to='/divani' className='div1'> Диваны</Link></li>
+              <li><Link to='/kresla' className='div1'>Кресла</Link></li>
+              <li><Link to='/stulya' className='div1'>Стулья</Link></li>
               {/* <li>Кровати</li>
               <li>Матрацы</li>
               <li>Пуфы</li>
@@ -54,7 +54,7 @@ function Model() {
         </div>
 
         <div className="search">
-          <div className="input-wrapper">
+          <div className="input-wrapper">x
             <input
               className="inp"
               type="text"

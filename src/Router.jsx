@@ -43,7 +43,7 @@ export const myRouter = createBrowserRouter([
         element:<Voprosy/>
       },
       {
-        path: 'divany',
+        path: 'divani',
         element:<Divany/>
       },
       {
