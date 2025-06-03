@@ -47,7 +47,7 @@ function Home() {
           <img src={divane} className="bbl" />
         </div>
       </div>
-
+<div className="nov"><h1><span>Н</span>овинки</h1></div>
       <div className="stran-slider">
         <button onClick={() => scroll("left")} className="scroll-btn left">
           <img src={left}  />
@@ -87,7 +87,7 @@ function Home() {
             задолго до начала ее производства.
           </p>
           <Link to="ind" href="#" className="btn_4k2">
-            ИНДИ ВИДУАЛЬНАЯ МЕБЕЛЬ
+            ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
           </Link>
         </div>
       </div>
@@ -148,36 +148,6 @@ function Home() {
           </p>
         </div>
       </div>
-          
-
-
-      {/* <h2 class="partners-title">
-        <span>Н</span>аши партнёры
-      </h2>
-
-      <section class="partners-section">
-        <div class="partners-text-content">
-          <p class="partners-description">
-            Компании сотрудничают с нами по всему миру
-          </p>
-          <p class="partners-descriptions">
-            На данный момент дилерская сетьфабрики «Эком-Мебель» насчитывает
-            более 30 салонов по всей Украине. Сейчас мы заинтересованы в
-            расширении сети и предлагаем выгодные условия для сотрудничества.
-          </p>
-          <p class="partners-descriptionss">
-            Основным преимуществом фабрики является изготовление любого
-            индивидуального изделия, мягкой мебели и аксессуаров из наших
-            основных коллекций. Также присутствует линейка оригинальных
-            интерьерных корпусных изделий.
-          </p>
-        </div>
-        <div class="partners-image-box">
-          <div class="partners-image-frame">
-            <img src={arni} alt="Мебель Эком" class="partners-image" />
-          </div>
-        </div>
-      </section> */}
 
       <div className="immggss">
         <img src={vogue} className="vogue" />
@@ -186,24 +156,24 @@ function Home() {
         <img src={samsung} className="samsung" />
       </div>
 
-      <div class="catalog-grid">
-        <div class="catalog-card">
-          <img src={ff} alt="" class="catalog-image" />
+      <div className="catalog-grid">
+        <div className="catalog-card">
+          <img src={ff} alt="" className="catalog-image" />
         </div>
-        <div class="catalog-card">
-          <img src={hh} alt="" class="catalog-image" />
+        <div className="catalog-card">
+          <img src={hh} alt="" className="catalog-image" />
         </div>
-        <div class="catalog-card">
-          <img src={gg} alt="" class="catalog-image" />
+        <div className="catalog-card">
+          <img src={gg} alt="" className="catalog-image" />
         </div>
-        <div class="catalog-card">
-          <img src={ss} alt="" class="catalog-image" />
+        <div className="catalog-card">
+          <img src={ss} alt="" className="catalog-image" />
         </div>
       </div>
 
-      <div class="g5kqe">
-        <div class="x1rwq">
-          <div class="u3mzj">
+      <div className="g5kqe">
+        <div className="x1rwq">
+          <div className="u3mzj">
             <span></span>Качество
           </div>
           <p>
@@ -215,14 +185,14 @@ function Home() {
             компании, которой «Эжи-Мебель» следует с самого своего создания.
           </p>
         </div>
-        <div class="lk09d">
+        <div className="lk09d">
           <img src={hh} alt="Диван" />
         </div>
       </div>
 
-      <div class="g5kqe">
-        <div class="x1rwq">
-          <div class="u3mzj">
+      <div className="g5kqe">
+        <div className="x1rwq">
+          <div className="u3mzj">
             <span></span>Гарантия
           </div>
           <p>
@@ -231,14 +201,14 @@ function Home() {
             обоснованно заявила о лучшем качестве производимой мебели.
           </p>
         </div>
-        <div class="lk09d">
+        <div className="lk09d">
           <img src={ss} alt="Диван" />
         </div>
       </div>
 
-      <div class="g5kqe">
-        <div class="x1rwq">
-          <div class="u3mzj">
+      <div className="g5kqe">
+        <div className="x1rwq">
+          <div className="u3mzj">
             <span></span>Почему нам можно доверять?
           </div>
           <p>
@@ -253,7 +223,7 @@ function Home() {
             что подтверждено государственными сертификатами соответствия.
           </p>
         </div>
-        <div class="lk09d">
+        <div className="lk09d">
           <img src={ff} alt="Диван" />
         </div>
       </div>

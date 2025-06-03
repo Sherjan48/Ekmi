@@ -12,7 +12,7 @@ export const myRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Show />,
+        element: <Home />,
       },
       {
         path: 'ind' ,

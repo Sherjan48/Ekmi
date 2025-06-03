@@ -6,7 +6,17 @@ function Show() {
     <div className="show">
       <div className="map">
         <h1>Контакты</h1>
-        <div className="adr"></div>
+        <div className="adr">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0516278357095!2d28.4472874763277!3d49.21854797138334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b8673b5d9fb%3A0x39cf1b3b224774ad!2z0YPQuy4g0JfQvtC00YfQuNGFLCA1LCDQktC40L3QvdC40YbQsCwg0JLQuNC90L3QuNGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMjEwMDA!5e0!3m2!1sru!2skg!4v1748843176457!5m2!1sru!2skg"
+            width="100%"
+            height="600"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
       <div className="facts">
         <h1>Факты:</h1>
@@ -18,10 +28,9 @@ function Show() {
               сертификацию своей продукции, убедительно подтверждают лидерство
               компании на украинском рынке высококачественной мягкой мебели.
             </p>
-            
           </div>
           <div className="fact2">
-          <span > 2</span>
+            <span> 2</span>
 
             <p>
               Фабрика «Экми-мебель» сертифицирована по системе менеджмента
@@ -30,7 +39,7 @@ function Show() {
             </p>
           </div>
           <div className="fact3">
-          <span> 3</span>
+            <span> 3</span>
 
             <p>
               Компания «Экми-Мебель» первой из украинских производителей мягкой
@@ -468,7 +477,7 @@ function Show() {
           </div>
         </div>
         <div className="page26">
-        <div className="inf3">
+          <div className="inf3">
             <h1>Днепр</h1>
             <h3>
               Адрес: <span> пр. Александра Поля 137</span>
