@@ -29,13 +29,13 @@ function Stulya() {
                             onMouseEnter={() => setMenuOpen(true)}
                             onMouseLeave={() => setMenuOpen(false)}
                           >
-                            <p>Диваны <SlArrowDown /></p>
+                            <p>Стулья <SlArrowDown /></p>
                             {menuOpen && (
                               <ul className="vse-modeli-menu">
                                   {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
                                   <li><Link to='/modeli' className='div1'> Все 2D-3D модели </Link></li>
-                                  <li>Кресла</li>
-                                  <li>Стулья</li>
+                                  <li><Link to='/kresla' className='div1'>Кресла </Link></li>
+                                  <li><Link id="ool" to="/divani">Диваны</Link></li>
                               </ul>
                             )}
                           </div>
