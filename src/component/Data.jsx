@@ -16,7 +16,7 @@ export const data  = [
       img: photo2
     },
     { name: "КРЕСЛА", 
-        img: photo3
+      img: photo3
     },
     // { name: "КРОВАТИ", 
     //     img: photo4

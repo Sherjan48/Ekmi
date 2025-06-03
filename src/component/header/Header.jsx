@@ -19,7 +19,7 @@ const Header = () => {
             КАТАЛОГ
             {menuOpen && (
               <ul className="dropdown-menu">
-                <li> <Link id="ool" to="divany">Диваны</Link> </li>
+                <li> <Link id="ool" to="divani">Диваны</Link> </li>
                 <li> <Link id="ool" to="kresla">Кресла</Link></li>
                 <li> <Link to="stulya" id="ool" >Стулья</Link> </li>
                 {/* <li> <Link to="krovati" id="ool" >Кровати</Link> </li>
