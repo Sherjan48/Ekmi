@@ -6,13 +6,15 @@ body {
 
 .cont {
   height: auto;
+  padding-top: 110px;
+  width: 1500px;
 }
 
 .wrapper {
   display: flex;
   background: #d5bbaa;
   height: 530px;
-  max-width: 1500px;
+  width: 100%;
   margin: auto;
   margin-bottom: 200px;
 }
@@ -36,7 +38,16 @@ body {
 .left-block h1 span {
   color: orange;
 }
-.left-block .catalog-button {
+.nov{
+  font-weight: 700;
+  line-height: 1.3;
+  width: 250px;
+  margin-left: 115px;
+}
+.nov h1 span{
+  color: orange;
+}
+.catalog-button {
   background: orange;
   color: white;
   padding: 15px 30px;
@@ -49,7 +60,7 @@ body {
   width: 210px;
   margin-left: 115px;
 }
-.left-block .catalog-button:hover {
+.catalog-button:hover {
   background: #e69500;
 }
 
@@ -63,47 +74,22 @@ body {
 .bbl {
   margin-top: 25px;
   margin-right: 135px;
-  width: 700px; /* по желанию */
-  height: auto;
-  border-radius: 8px;
-  transition: opacity 0.5s ease-in-out;
+  width: 700px;
+  height: 500px;
 }
 
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+.dots{
+  width: 60px;
+  height: 20px;
 }
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+.dot{
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
 }
-
-.dot.active {
-  background-color: #ff9100;
-}
-
-
-.novinki {
-  margin-left: -10px;
-}
-
-.novinki h1 {
+.dot :active {
   color: orange;
-  margin-top: 250px;
-  margin-left: 135px;
 }
-
-.novinki span {
-  color: black;
-}
-
 .stran {
   margin-top: 300px;
   max-width: 1500px;
@@ -120,6 +106,7 @@ body {
   max-width: 1500px;
   margin: auto;
   margin-top: 150px;
+  z-index: -1;
 }
 .imgbox_n77 {
   flex: 1;
@@ -278,15 +265,14 @@ header .orange {
   background: #f7f7f7;
   max-width: 1500px;
   margin: auto;
-  /* margin-top: 150px;  */
 }
 
 .text-box {
   position: absolute;
   background: #444;
   margin-top: -10px;
-  /* margin-left: ; */
   color: white;
+  z-index: 1;
   padding: 30px;
   width: 538px;
   position: relative;
@@ -612,8 +598,6 @@ header .orange {
   margin-left: 300px;
 }
 
-
-
 .stran-slider {
   position: relative;
   max-width: 1000px;
@@ -621,6 +605,7 @@ header .orange {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .imgh {
@@ -632,7 +617,7 @@ header .orange {
 }
 
 .item {
-  min-width: 300px; 
+  min-width: 300px;
   height: 300px;
   flex: 0 0 300px;
   scroll-snap-align: start;
@@ -671,4 +656,85 @@ header .orange {
 
 .rightrrr {
   transform: rotate(180deg);
+}
+@media (max-width: 430px) {
+  .cont {
+    padding-top: 300px;
+    width: 1500px;
+  }
+  .wrapper {
+    width: 1500px;
+    height: 400vh;
+    display: block;
+  }
+  .left-block {
+    /* background-color: red; */
+    width: 350vw;
+    height: 110vh;
+  }
+  .left-block h1 {
+    margin-top: 1300px;
+    width: 1350px;
+    font-size: 110px;
+    margin-left: 0;
+  }
+  .right-block {
+    width: 1500px;
+    height: 210vh;
+    padding: 0;
+  }
+  .bbl {
+    width: 1500px;
+    height: 250vh;
+    margin-right: 0;
+  }
+  .catalog-button {
+    margin-top: 1116px;
+    width: 800px;
+    height: 150px;
+    font-size: 3rem;
+    margin-left: 285px;
+  }
+  .top-text {
+    display: none;
+  }
+  .nov{
+    font-weight: 700;
+    line-height: 1.3;
+    width: 250px;
+    font-size: 5rem;
+    margin-left: 115px;
+  }
+  .stran-slider{
+    width: 1500px;
+    height: 2000px;
+  }
+  .imgh{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item{
+    width: 1200px;
+    height: 1200px;
+  }
+  .image-box img {
+    width: 1000px;
+    height: 1000px;
+  }
+  .imgh {
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; */
+  }
+  
+  .item {
+    flex: 0 0 100%;
+    /* scroll-snap-align: start;
+    box-sizing: border-box; */
+  }
+  
 }

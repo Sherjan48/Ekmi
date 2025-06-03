@@ -30,7 +30,7 @@ function Individ() {
     <div className='qweqwe'>
       <div class="xkq34">
     <div class="vnb32">
-      <h2>П <span>олный цикл производства</span></h2>
+      <h2>П<span>олный цикл производства</span></h2>
       <p>Качество мягкой мебели начинается задолго до начала её производства.</p>
       <Link to="/voprosy" href="#" class="btnf9">Связаться с менеджером</Link>
     </div>

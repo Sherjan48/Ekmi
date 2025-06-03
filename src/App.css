@@ -1,81 +1,14 @@
-.header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-  
-  .dropdown {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  }
-  
-  .dropdown-menu li {
-    padding: 10px 20px;
-    white-space: nowrap;
-  }
-  
-  .dropdown-menu .highlight {
-    background-color: #d86d00;
-    color: white;
-  }
-  
-  .right-side {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .logo {
-    height: 30px;
-  }
-  
-  .about-link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .phone {
-    font-weight: bold;
-  }
-  
-  .lang-select {
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    cursor: pointer;
-  }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+body > .skiptranslate {
+  display: none !important;
 }

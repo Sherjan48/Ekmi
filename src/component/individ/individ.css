@@ -1,11 +1,13 @@
 .qweqwe {
     height: auto;
+    padding-top: 70px;
+    width: 1500px;
 }
 
 .xkq34 {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
+      width: 1500px;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
       max-width: 1500px;

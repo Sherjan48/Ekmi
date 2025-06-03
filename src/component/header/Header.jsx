@@ -1,62 +1,214 @@
 import React, { useState } from "react";
 import "./header.css";
-import logo from '../../assets/Ekmi.jpg'
+import logo from "../../assets/Ekmi.jpg";
 import { Link } from "react-router-dom";
+import Language from "../Language";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("RU");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [burgerOpen, setBurgerOpen] = useState(false);
+  
 
   return (
     <header className="header">
       <nav className="nav">
-        <ul className="menu">
-          <li
-            className="dropdown"
-            onMouseEnter={() => setMenuOpen(true)}
-            onMouseLeave={() => setMenuOpen(false)}
-          >
-            КАТАЛОГ
-            {menuOpen && (
-              <ul className="dropdown-menu">
-                <li> <Link id="ool" to="divani">Диваны</Link> </li>
-                <li> <Link id="ool" to="kresla">Кресла</Link></li>
-                <li> <Link to="stulya" id="ool" >Стулья</Link> </li>
-                {/* <li> <Link to="krovati" id="ool" >Кровати</Link> </li>
-                <li> <Link to="matrasy" id="ool" >Матрасы</Link> </li>
-                <li> <Link to="pufty" id="ool" >Пуфы</Link> </li>
-                <li><Link to="eks" id="ool" >Эксклюзивная мебель</Link></li> */}
-                <li><Link to="modeli" id="ool" >2D-3D модели</Link></li>
+        <div className="left-side">
+          {burgerOpen && (
+            <button className="close-btn" onClick={() => setBurgerOpen(false)}>
+              &times;
+            </button>
+          )}
 
-              </ul>
+          <ul className={`menu ${burgerOpen ? "menu-mobile-open" : ""}`}>
+            {burgerOpen ? (
+              <div className="bmenu">
+                <li className="burg">
+                  <Link
+                    to="divany"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Диваны
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="kresla"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Кресла
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="stulya"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Стулья
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="krovati"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Кровати
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="matrasy"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Матрасы
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="pufty"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Пуфы
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="eks"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Эксклюзивная мебель
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="modeli"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    2D-3D модели
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="/"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    О компании
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="ind"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Индивидуальная мебель
+                  </Link>
+                </li>
+                <li className="burg">
+                  <Link
+                    to="show"
+                    className="bur"
+                    onClick={() => setBurgerOpen(false)}
+                  >
+                    Контакты
+                  </Link>
+                </li>
+              </div>
+            ) : (
+              <>
+                <li
+                  className="dropdown"
+                  onMouseEnter={() => setDropdownOpen(true)}
+                  onMouseLeave={() => setDropdownOpen(false)}
+                >
+                  КАТАЛОГ
+                  {dropdownOpen && (
+                    <ul className="dropdown-menu">
+                      <li>
+                        <Link to="divany" id="ool">
+                          Диваны
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="kresla" id="ool">
+                          Кресла
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="stulya" id="ool">
+                          Стулья
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="krovati" id="ool">
+                          Кровати
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="matrasy" id="ool">
+                          Матрасы
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="pufty" id="ool">
+                          Пуфы
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="eks" id="ool">
+                          Эксклюзивная мебель
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="modeli" id="ool">
+                          2D-3D модели
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+                <li>
+                  <Link to="ind" id="ool">
+                    ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="show" id="ool">
+                    КОНТАКТЫ
+                  </Link>
+                </li>
+              </>
             )}
-          </li>
-          <Link to="/" id="ool" className="about-link">О КОМПАНИИ</Link>
-          <Link to="ind" id="ool">ИНДИВИДУАЛЬНАЯ МЕБЕЛЬ</Link>
-                  
-
-
-              
-        </ul>
+          </ul>
+        </div>
 
         <div className="right-side">
-          <img src={logo} alt="Logo" className="logo" />
-          <Link id="ool" to="show"> КОНТАКТЫ </Link> 
+          <Link to="/">
+            <img src={logo} className="logo" />
+          </Link>
+          <Link to="/" className="da">
+            О компании
+          </Link>
+
           <span className="phone">+38 (099)-638-45-37</span>
-          <select
-            className="lang-select"
-            value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+          <Language />
+
+          <div
+            className={`burger ${burgerOpen ? "open" : ""}`}
+            onClick={() => setBurgerOpen(!burgerOpen)}
           >
-            <option value="RU">RU</option>
-            <option value="UA">UA</option>
-            <option value="EN">EN</option>
-          </select>
-
-            <div className="language">
-              
-            </div>
-
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
     </header>
