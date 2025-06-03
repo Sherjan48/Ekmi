@@ -32,6 +32,7 @@ function Home() {
     });
   };
 
+  
     const images = [divane, divane1, divane2];
   const [currentIndex, setCurrentIndex] = useState(0);
 

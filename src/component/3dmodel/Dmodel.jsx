@@ -3,6 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { mebel2 } from '../Mebel2';
 import './dmodel.css'
+import { Link } from 'react-router-dom';
 
 function Dmodel() {
       const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ function Dmodel() {
                   <ul className="vse-modeli-menu">
                     {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
                     <li><Link to='/divany' className='div1'> Диваны</Link></li>
-                    <li>Кресла</li>
+                    <li><Link to='kresla' className='div1'>Кресла</Link> </li>
                     <li>Стулья</li>
                     {/* <li>Кровати</li>
                     <li>Матрацы</li>
