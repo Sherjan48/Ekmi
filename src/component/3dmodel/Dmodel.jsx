@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { mebel2 } from '../Mebel2';
 import './dmodel.css'
-import ffon from '../../assets/ffon.jpg'
+import { Link } from 'react-router-dom';
 
 function Dmodel() {
       const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +13,7 @@ function Dmodel() {
         mebel.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
 
-      const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-  };
+      
   return (
     <div className='wwweee'>
             <div className='poisk'>
@@ -30,14 +25,14 @@ function Dmodel() {
                 <p>Все 2D-3D модели <SlArrowDown /></p>
                 {menuOpen && (
                   <ul className="vse-modeli-menu">
-                    <li>Все 2D-3D модели <SlArrowUp /></li>
-                    <li>Диваны</li>
-                    <li>Кресла</li>
+                    {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
+                    <li><Link to='/divany' className='div1'> Диваны</Link></li>
+                    <li><Link to='kresla' className='div1'>Кресла</Link> </li>
                     <li>Стулья</li>
-                    <li>Кровати</li>
+                    {/* <li>Кровати</li>
                     <li>Матрацы</li>
                     <li>Пуфы</li>
-                    <li>Эксклюзивная мебель</li>
+                    <li>Эксклюзивная мебель</li> */}
                   </ul>
                 )}
               </div>
@@ -88,7 +83,7 @@ function Dmodel() {
         </div> */}
 
 
-                <div className="form-section">
+                {/* <div className="form-section">
         <div className="form-image-block">
           <img src={ffon} className="form-image" />
         </div>
@@ -109,7 +104,7 @@ function Dmodel() {
             {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

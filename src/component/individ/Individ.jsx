@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './individ.css'
 import ss from '../../assets/ss.jpg'
 import gg from '../../assets/gg.jpg'
@@ -12,15 +12,27 @@ import ff from '../../assets/ff.jpg'
 import tt from '../../assets/tt.jpg'
 import { Link } from "react-router-dom";
 import { data1 } from '../../data'
+import left from "../../assets/left.jpg";
+import right from "../../assets/right.jpg";
 
 function Individ() {
+  const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+    const container = scrollRef.current;
+    const cardWidth = container.querySelector('.item').offsetWidth + 20; 
+    container.scrollBy({
+      left: direction === "left" ? -cardWidth : cardWidth,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className='qweqwe'>
       <div class="xkq34">
     <div class="vnb32">
       <h2>П <span>олный цикл производства</span></h2>
       <p>Качество мягкой мебели начинается задолго до начала её производства.</p>
-      <Link to="show" href="#" class="btnf9">Связаться с менеджером</Link>
+      <Link to="/voprosy" href="#" class="btnf9">Связаться с менеджером</Link>
     </div>
     <div class="asf67">
       <div class="imgbox92">
@@ -66,23 +78,27 @@ function Individ() {
 
     <h2 class="partners-title"><span>Н</span>овинки</h2>
 
-  <div className="stran"  id='lllooo' >
-    {/* <img src={left} alt="left" className="arrow" /> */}
+  <div className="stran-slider">
+          <button onClick={() => scroll("left")} className="scroll-btn left">
+            <img src={left}  />
+          </button>
   
-    <div className="imgh">
-      {data1.map((el, index) => (
-        <div className="item" key={index}>
-          <div className="image-box">
-            <img src={el.image} alt={el.name} />
+          <div className="imgh" ref={scrollRef}>
+            {data1.map((el, index) => (
+              <div className="item" key={index}>
+                <div className="image-box">
+                  <img src={el.image} alt={el.name} />
+                </div>
+                <h2>{el.name}</h2>
+                <p>{el.price}</p>
+              </div>
+            ))}
           </div>
-          <h2>{el.name}</h2>
-          <p>{el.price} </p>
+  
+          <button onClick={() => scroll("right")} className="scroll-btn right">
+            <img src={right} className="rightrrr" />
+          </button>
         </div>
-      ))}
-    </div>  
-    {/* <img src={right} alt="right" className="arrow" /> */}
-  </div>
-{/* <button className="catalog-butto">ПЕРЕЙТИ В КАТАЛОГ</button>  */}
 
 
 

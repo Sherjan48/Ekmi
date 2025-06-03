@@ -16,14 +16,20 @@ function Model() {
     mebel.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setIsSubmitted(true);
+    };
   return (
     <div className="category-menu">
       {data.map((item, index) => (
-        <div key={index} className="category-item">
-          <img src={item.img} alt='' className="category-image" />
-          <p className='category-title'>{item.name}</p> 
-        </div>
-      ))}
+        <Link to={item.Route} key={index} className="category-item">
+          <img src={item.img} alt={item.name} className="category-image" />
+            <p className='category-title'>{item.name}</p>
+        </Link>
+        ))}
 
 
       <div className='poisk'>
@@ -35,20 +41,20 @@ function Model() {
           <p>Все 2D-3D модели <SlArrowDown /></p>
           {menuOpen && (
             <ul className="vse-modeli-menu">
-              <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li>
-              <li>Диваны</li>
-              <li>Кресла</li>
-              <li>Стулья</li>
-              <li>Кровати</li>
+              {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
+              <li><Link to='/divani' className='div1'> Диваны</Link></li>
+              <li><Link to='/kresla' className='div1'>Кресла</Link></li>
+              <li><Link to='/stulya' className='div1'>Стулья</Link></li>
+              {/* <li>Кровати</li>
               <li>Матрацы</li>
               <li>Пуфы</li>
-              <li>Эксклюзивная мебель</li>
+              <li>Эксклюзивная мебель</li> */}
             </ul>
           )}
         </div>
 
         <div className="search">
-          <div className="input-wrapper">
+          <div className="input-wrapper">x
             <input
               className="inp"
               type="text"
@@ -88,7 +94,7 @@ function Model() {
       </div>
 
 
-          <div className="form-section">
+          {/* <div className="form-section">
   <div className="form-image-block">
     <img src={ffon} className="form-image" />
   </div>
@@ -100,15 +106,16 @@ function Model() {
         <h2 className="form-title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
       </div>
     </div>
-    <form className="form-fields">
-      <input type="text" placeholder="Ваше имя" />
-      <input type="text" placeholder="Ваш номер телефона" />
-      <input type="text" placeholder="Страна" />
+    <form className="form-fields" onSubmit={handleSubmit}>
+      <input type="text" placeholder="Ваше имя" required/>
+      <input type="text" placeholder="Ваш номер телефона" required/>
+      <input type="text" placeholder="Страна" required />
       <textarea placeholder="Комментарий" />
       <button type="submit" className="form-button">ЗАПРОСИТЬ ЗВОНОК</button>
+      {isSubmitted && <p className="success-message">Заявка отправлена!</p>}
     </form>
   </div>
-</div>
+</div> */}
 
 
     </div>
