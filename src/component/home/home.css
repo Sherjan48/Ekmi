@@ -74,9 +74,22 @@ body {
 .bbl {
   margin-top: 25px;
   margin-right: 135px;
+  width: 700px;
+  height: 500px;
 }
 
-
+.dots{
+  width: 60px;
+  height: 20px;
+}
+.dot{
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.dot :active {
+  color: orange;
+}
 .stran {
   margin-top: 300px;
   max-width: 1500px;
@@ -692,4 +705,36 @@ header .orange {
     font-size: 5rem;
     margin-left: 115px;
   }
+  .stran-slider{
+    width: 1500px;
+    height: 2000px;
+  }
+  .imgh{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item{
+    width: 1200px;
+    height: 1200px;
+  }
+  .image-box img {
+    width: 1000px;
+    height: 1000px;
+  }
+  .imgh {
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; */
+  }
+  
+  .item {
+    flex: 0 0 100%;
+    /* scroll-snap-align: start;
+    box-sizing: border-box; */
+  }
+  
 }
