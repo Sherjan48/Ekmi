@@ -43,7 +43,7 @@ function Model() {
             <ul className="vse-modeli-menu">
               {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
               <li><Link to='/divany' className='div1'> Диваны</Link></li>
-              <li>Кресла</li>
+              <li><Link to='kresla'className='div1' >Кресла</Link></li>
               <li>Стулья</li>
               {/* <li>Кровати</li>
               <li>Матрацы</li>
