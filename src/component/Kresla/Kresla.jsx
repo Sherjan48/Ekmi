@@ -6,6 +6,7 @@ import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { Link } from 'react-router-dom';
 // import { divany } from '../Divany1';
 import { kresla } from '../Kresla';
+import './kresla.css'
 
 function Kresla() {
    const [menuOpen, setMenuOpen] = useState(false);
@@ -69,6 +70,12 @@ function Kresla() {
                     </div>
         </div>
         </div>
+    <div className="pagination">
+              <span className="page "><Link to='/modeli' className='div1'>1 </Link></span>
+              <span className="page "><Link id="ool" to="/divani">2</Link></span>
+              <span className="page "><Link to='/stulya' className='div1'>3 </Link> </span>
+              <span className="page active"><Link to='/kresla' className='div1'>4 </Link> </span>
+            </div>
     </div>
   )
 }
