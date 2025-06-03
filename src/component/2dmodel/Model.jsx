@@ -81,10 +81,9 @@ function Model() {
 
         <div className="pagination">
           <span className="page active">1</span>
-          <span className="page">2</span>
-          <span className="page">3</span>
-          <span className="page">4</span>
-          <span className="page">{'>'}</span>
+          <span className="page"><Link id="ool" to="/divani">2</Link></span>
+          <span className="page"><Link to='/stulya' className='div1'>3 </Link> </span>
+          <span className="page"><Link to='/kresla' className='div1'>4 </Link> </span>
         </div>
 
 

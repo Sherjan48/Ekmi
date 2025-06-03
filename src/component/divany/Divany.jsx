@@ -66,6 +66,12 @@ function Divany() {
                   ))}
                 </div>
     </div>
+    <div className="pagination">
+              <span className="page "><Link to='/modeli' className='div1'>1 </Link></span>
+              <span className="page active"><Link id="ool" to="/divani">2</Link></span>
+              <span className="page"><Link to='/stulya' className='div1'>3 </Link> </span>
+              <span className="page"><Link to='/kresla' className='div1'>4 </Link> </span>
+            </div>
     </div>
   )
 }
