@@ -35,8 +35,8 @@ function Divany() {
                     <ul className="vse-modeli-menu">
                         {/* <li> <Link to='/2d-3d'> Все 2D-3D модели </Link>  <SlArrowUp /></li> */}
                         <li><Link to='/modeli' className='div1'> Все 2D-3D модели </Link></li>
-                        <li>Кресла</li>
-                        <li>Стулья</li>
+                        <li><Link to='/kresla' className='div1'>Кресла </Link> </li>
+                        <li><Link to='/stulya' className='div1'>Стулья </Link></li>
                     </ul>
                   )}
                 </div>
